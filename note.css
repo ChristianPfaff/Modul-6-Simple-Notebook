@@ -1,0 +1,194 @@
+body {
+  max-width: 980px;
+  margin: 0 auto;
+}
+header {
+  background-color: white;
+  position: fixed;
+  width: 980px;
+}
+
+.placeholder-header {
+  height: 107px;
+}
+
+.outer-box {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+h1 {
+  border-bottom: 2px solid lightgray;
+  position: sticky;
+  top: 25px;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  background-color: lightgray;
+  position: sticky;
+  top: 85px;
+  padding: 50px;
+  padding: 50px;
+  margin: 0 25px 0 25px;
+}
+
+.master-container {
+  display: flex;
+}
+
+.main-note {
+  width: 840px;
+}
+
+.placeholder-menu {
+  width: 120px;
+  height: 100%;
+  margin: 10px;
+}
+
+.my-notes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.input-note {
+  max-width: 400px;
+  height: 150px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#title,
+#takeNote {
+  margin: 10px;
+  border: none;
+}
+
+.noteButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#takeNote {
+  width: 300px;
+  height: 70px;
+  resize: none;
+}
+
+#id-button {
+  margin-right: 10px;
+}
+.menu {
+  width: 70px;
+  height: 100vh;
+  background-color: lightgray;
+  padding: 25px;
+  margin: 0 20px 0 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trash {
+  width: 50px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.new-note {
+  min-height: 150px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 32px 0 0 0;
+}
+
+.p-size {
+  margin: 10px;
+  border: none;
+  padding: 0;
+}
+
+.alignDelete {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.p-width {
+  max-width: 200px;
+  margin: 10px;
+}
+
+#deleteNote {
+  margin: 10px 10px 10px 0px;
+}
+
+.left-container {
+  position: fixed;
+}
+
+.d-none {
+  display: none !important; /* Damit wird hier erreicht, das dass Copright-Fenster korrekt angezeigt wird, da sonst display:flex; stören würde!! */
+}
+
+.note {
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+.footer {
+  margin-bottom: 200px;
+}
+
+.footer .right a {
+  color: black;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-rights-bg {
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-rights {
+  height: 50vh;
+  width: 50vw;
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.openIconRights {
+  cursor: pointer;
+}
+
+.hidden-content {
+  overflow: hidden; /* Damit erreicht man, das die Scroll-Balen nicht mehr erscheinen und somit - wenn das Copyright-Fenster angezeigt wird - der Hintergrund nicht gescrollt werden kann - quasi eigefroren!! */
+}
+
+.swho-content {
+  overflow: unset;
+}

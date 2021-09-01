@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nachbau Notizblock</title>
+    <script src="note.js"></script>
+    <link rel="stylesheet" href="note.css" />
+  </head>
+
+  <body onload="init()">
+    <div id="id-icon-rights" class="d-none icon-rights-bg" onclick="closeIconRights()">
+      <div class="icon-rights">
+        <h2>In this side I use following icons:</h2>
+        <p><a href="https://www.iconsdb.com/black-icons/edit-9-icon.html" target="_blank">edit-9-icon</a></p>
+        <p><a href="https://www.iconsdb.com/black-icons/copyright-icon.html" target="_blank">copyright-icon</a></p>
+        <p><a href="https://de.freepik.com/freie-ikonen/papierkorb_730340.htm" target="_blank">papierkorb_730340</a></p>
+      </div>
+    </div>
+
+    <header>
+      <h1>Simple Notebook</h1>
+    </header>
+    <div class="placeholder-header"></div>
+    <div class="outer-box">
+      <div class="top">
+        <div class="menu">
+          <div>
+            <img class="note" src="img/edit-9-48.png" onclick="showNotes('my-notes',titles,notes);showHandler('note');" />
+            <img class="trash" src="img/recycle-bin.png" onclick="showNotes('my-trash-notes',trashTitles,trashNotes);showHandler('trash');" />
+          </div>
+          <div class="footer">
+            <div class="right">
+              <a href="#">AGB</a>
+              <a href="#">Impressum </a>
+              <a href="#">Datenschutz</a>
+              <p id="openIconRights" class="openIconRights" onclick="openIconRights()"><span>&#169;&nbsp</span>Copyright</p>
+            </div>
+          </div>
+        </div>
+        <div class="master-container">
+          <div class="placeholder-menu"></div>
+          <div class="frame-notes">
+            <div id="inputNote" class="input-note">
+              <input id="title" type="text" placeholder="Title" />
+              <div class="noteButton">
+                <textarea id="takeNote" placeholder="Take a note..."></textarea>
+                <button id="id-button" onclick="storeNote()">Save</button>
+              </div>
+            </div>
+            <div class="main-note">
+              <div id="my-notes" class="my-notes"></div>
+              <div id="my-trash-notes" class="my-notes d-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
